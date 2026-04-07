@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Montserrat", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+  --font-display: "Playfair Display", ui-serif, Georgia, serif;
+
+  --color-primary: #5C4386;
+  --color-secondary: #D9D0EB;
+  --color-tertiary: #D8A83E;
+  --color-background: #F4F1FA;
+
+  --color-brand-blue: var(--color-primary);
+  --color-brand-green: var(--color-secondary);
+  --color-brand-gold: var(--color-tertiary);
+  --color-brand-sage: var(--color-background);
+  --color-brand-grey: #ffffff;
+
+  --color-accent: var(--color-tertiary);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-sans text-slate-900 bg-background;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-serif;
+  }
+}
+
+.cinematic-overlay {
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 100%);
+}
+
+.glass-nav {
+  background-color: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+}
+
+.premium-shadow {
+  box-shadow: 0 20px 40px rgba(43, 73, 105, 0.05);
+}

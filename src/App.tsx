@@ -792,9 +792,9 @@ export default function App() {
               <img src="/Logo_2.png" alt="Deisy Mavares Logo" className="h-30 w-auto object-contain mx-auto mb-10 drop-shadow-sm" />
               <div className="flex justify-center gap-6 mb-12">
                 {[
-                  { id: 'Linkedin', icon: Linkedin, url: 'www.linkedin.com/in/deisy-mavares-0352a9404' },
+                  { id: 'Linkedin', icon: Linkedin, url: 'https://www.linkedin.com/in/deisy-mavares-0352a9404' },
                   { id: 'Instagram', icon: Instagram, url: 'https://www.instagram.com/mavaresdeisy/' },
-                  { id: 'Youtube', icon: Youtube, url: '#' }
+                  { id: 'Youtube', icon: Youtube, url: 'https://www.youtube.com/@deisymavares8779#' }
                 ].map(social => (
                   <a
                     key={social.id}

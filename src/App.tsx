@@ -311,7 +311,7 @@ const About = () => {
 
 const ServiceCard = ({ service }: { service: any }) => (
   <>
-    <div className="w-14 h-14 bg-[#F4F1FA] rounded-2xl flex items-center justify-center mb-8">
+    <div className="w-14 h-14 bg-[#EDEBE7] rounded-2xl flex items-center justify-center mb-8">
       <service.icon size={22} className="text-brand-blue" />
     </div>
     <h4 className="text-xl font-bold text-brand-blue mb-4">{service.title}</h4>

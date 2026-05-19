@@ -29,7 +29,7 @@ const LoadingScreen = () => (
       transition={{ duration: 1, ease: "easeOut" }}
       className="text-center"
     >
-      <img src="/Logo_2.png" alt="Deisy Mavares Logo" className="w-64 md:w-80 object-contain mx-auto drop-shadow-xl" />
+      <img src="/Logo_1.png" alt="Deisy Mavares Logo" className="w-64 md:w-80 object-contain mx-auto drop-shadow-xl" />
 
       <motion.div
         initial={{ width: 0 }}
@@ -61,7 +61,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? "glass-nav py-6 shadow-sm" : "py-10"}`}>
+    <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${isScrolled ? "glass-nav py-6 shadow-sm" : "py-10 bg-gradient-to-b from-[#1A1816]/90 via-[#473C30]/60 to-transparent"}`}>
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         <a href="#inicio" className="flex items-center transition-transform hover:scale-105">
           <img src="/Logo_2.png" alt="Deisy Mavares Logo" className="h-10 md:h-12 w-auto object-contain scale-[1.35] md:scale-250 origin-left" />
@@ -73,7 +73,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-sm font-medium text-slate-700 transition-colors duration-300 hover:text-brand-gold"
+              className="text-sm font-medium text-[#EDEBE7] transition-colors duration-300 hover:text-brand-gold"
             >
               {link.name}
             </a>
@@ -87,7 +87,11 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Toggle */}
-        <button className="lg:hidden text-brand-blue" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+        <button
+          className="lg:hidden text-[#EDEBE7] p-2"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
+          aria-label="Menú"
+        >
           {isMenuOpen ? <X /> : <Menu />}
         </button>
       </div>
@@ -99,7 +103,7 @@ const Navbar = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-white border-t border-slate-100 overflow-hidden"
+            className="lg:hidden bg-[#473C30] border-t border-white/10 overflow-hidden"
           >
             <div className="flex flex-col p-6 gap-4">
               {navLinks.map(link => (
@@ -116,7 +120,7 @@ const Navbar = () => {
                       }
                     }, 150);
                   }}
-                  className="text-slate-600 font-medium hover:text-brand-blue"
+                  className="text-[#EDEBE7] font-medium hover:text-brand-gold"
                 >
                   {link.name}
                 </a>
@@ -197,7 +201,7 @@ const Hero = () => {
             <img
               src="/Header_Fondo.png"
               alt="Deisy Mavares - Liderazgo"
-              className="relative z-10 w-full h-[500px] lg:h-[700px] object-cover rounded-[2rem] border-[1px] border-brand-gold shadow-[0_20px_40px_rgba(92,67,134,0.15)]"
+              className="relative z-10 w-full h-[500px] lg:h-[700px] object-cover rounded-[2rem] border-[1px] border-brand-gold shadow-[0_20px_40px_rgba(71,60,48,0.15)]"
             />
           </motion.div>
 
@@ -243,18 +247,18 @@ const About = () => {
             <div className="absolute -top-6 -left-6 w-32 h-32 bg-brand-sage rounded-full z-0" />
             <div className="absolute -bottom-6 -right-6 w-48 h-48 bg-brand-grey rounded-full z-0" />
             <img
-              src="/about.jpeg"
+              src="/about.png"
               alt="Deisy Mavares"
               className="relative z-10 rounded-2xl shadow-2xl premium-shadow transition-all duration-700"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute bottom-8 -right-8 z-20 bg-white p-6 rounded-xl shadow-xl border border-slate-100 hidden md:block">
+            <div className="absolute bottom-8 -right-8 z-20 bg-white p-6 rounded-xl shadow-xl border border-[#EDEBE7] hidden md:block">
               <div className="flex items-center gap-4">
                 <div className="w-12 h-12 bg-brand-gold/10 rounded-full flex items-center justify-center">
                   <Award className="text-brand-gold" />
                 </div>
                 <div>
-                  <p className="text-xs font-bold text-slate-400 uppercase tracking-widest">Experiencia</p>
+                  <p className="text-xs font-bold text-[#BFBDB8] uppercase tracking-widest">Experiencia</p>
                   <p className="text-lg font-bold text-brand-blue">15+ Años de Impacto</p>
                 </div>
               </div>
@@ -275,7 +279,7 @@ const About = () => {
               </h3>
             </div>
 
-            <div className="space-y-6 text-slate-600 leading-relaxed text-lg">
+            <div className="space-y-6 text-[#7B766B] leading-relaxed text-lg">
               <p>
                 Mi historia no comienza solo con una maleta desde Venezuela a Panamá, comienza con una decisión: transformarme para poder transformar a otros.
                 Hoy ayudo a líderes y equipos a alcanzar alto desempeño sin sacrificar su bienestar, porque entendí que el verdadero éxito organizacional nace del equilibrio humano.
@@ -311,18 +315,18 @@ const ServiceCard = ({ service }: { service: any }) => (
       <service.icon size={22} className="text-brand-blue" />
     </div>
     <h4 className="text-xl font-bold text-brand-blue mb-4">{service.title}</h4>
-    <p className="text-slate-500/90 text-sm mb-6 leading-relaxed font-sans">
+    <p className="text-[#7B766B]/90 text-sm mb-6 leading-relaxed font-sans">
       {service.desc}
     </p>
     <div className="mb-8 pl-4 border-l-2 border-brand-gold">
-      <span className="block text-[9px] font-bold text-slate-400 uppercase tracking-widest mb-1.5">QUÉ RESUELVE:</span>
+      <span className="block text-[9px] font-bold text-[#BFBDB8] uppercase tracking-widest mb-1.5">QUÉ RESUELVE:</span>
       <p className="text-[13px] font-serif italic text-brand-blue/90 leading-relaxed pr-2">{service.solucion}</p>
     </div>
     <ul className="space-y-4 mb-10 flex-grow">
       {service.items.map((item: string, j: number) => (
         <li key={j} className="flex items-start gap-3">
           <div className="w-1.5 h-1.5 rounded-full bg-brand-gold mt-1.5 shrink-0" />
-          <span className="text-[9px] sm:text-[10px] font-bold text-slate-500/90 tracking-widest uppercase">
+          <span className="text-[9px] sm:text-[10px] font-bold text-[#7B766B]/90 tracking-widest uppercase">
             {item}
           </span>
         </li>
@@ -409,7 +413,7 @@ const Services = () => {
                 animate={{ opacity: 1, x: 0 }}
                 exit={{ opacity: 0, x: -40 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
-                className="bg-white p-8 rounded-3xl shadow-[0_10px_40px_rgba(92,67,134,0.06)] flex flex-col border border-slate-50"
+                className="bg-white p-8 rounded-3xl shadow-[0_10px_40px_rgba(71,60,48,0.06)] flex flex-col border border-[#EDEBE7]"
               >
                 <ServiceCard service={services[activeIndex]} />
               </motion.div>
@@ -422,7 +426,7 @@ const Services = () => {
               onClick={() => setActiveIndex(prev => Math.max(prev - 1, 0))}
               disabled={activeIndex === 0}
               aria-label="Anterior servicio"
-              className="w-12 h-12 rounded-full border-2 border-slate-200 flex items-center justify-center text-brand-blue hover:bg-white hover:border-white transition-all disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-slate-200 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
+              className="w-12 h-12 rounded-full border-2 border-[#BFBDB8]/30 flex items-center justify-center text-brand-blue hover:bg-white hover:border-white transition-all disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#BFBDB8]/30 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
             >
               <ChevronLeft size={24} />
             </button>
@@ -432,7 +436,7 @@ const Services = () => {
                 <button
                   key={i}
                   onClick={() => setActiveIndex(i)}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${activeIndex === i ? "bg-brand-gold w-8 shadow-[0_0_8px_rgba(216,168,62,0.4)]" : "bg-slate-300 hover:bg-slate-400 w-2.5"
+                  className={`h-2.5 rounded-full transition-all duration-300 ${activeIndex === i ? "bg-brand-gold w-8 shadow-[0_0_8px_rgba(197,169,142,0.4)]" : "bg-[#BFBDB8]/50 hover:bg-[#BFBDB8] w-2.5"
                     }`}
                   aria-label={`Ir al servicio ${i + 1}`}
                 />
@@ -443,7 +447,7 @@ const Services = () => {
               onClick={() => setActiveIndex(prev => Math.min(prev + 1, services.length - 1))}
               disabled={activeIndex === services.length - 1}
               aria-label="Siguiente servicio"
-              className="w-12 h-12 rounded-full border-2 border-slate-200 flex items-center justify-center text-brand-blue hover:bg-white hover:border-white transition-all disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-slate-200 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
+              className="w-12 h-12 rounded-full border-2 border-[#BFBDB8]/30 flex items-center justify-center text-brand-blue hover:bg-white hover:border-white transition-all disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#BFBDB8]/30 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
             >
               <ChevronRight size={24} />
             </button>
@@ -460,7 +464,7 @@ const Services = () => {
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
               whileHover={{ y: -10 }}
-              className="md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] bg-white p-8 sm:p-10 rounded-3xl shadow-[0_10px_40px_rgba(92,67,134,0.06)] flex flex-col border border-slate-50 transition-all duration-500 hover:shadow-[0_15px_50px_rgba(92,67,134,0.12)]"
+              className="md:w-[calc(50%-1rem)] lg:w-[calc(33.333%-1.4rem)] bg-white p-8 sm:p-10 rounded-3xl shadow-[0_10px_40px_rgba(71,60,48,0.06)] flex flex-col border border-[#EDEBE7] transition-all duration-500 hover:shadow-[0_15px_50px_rgba(71,60,48,0.12)]"
             >
               <ServiceCard service={service} />
             </motion.div>
@@ -507,7 +511,7 @@ const Differentiator = () => {
               className="p-8 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl"
             >
               <h4 className="text-brand-gold font-bold mb-3">{item.title}</h4>
-              <p className="text-slate-300 text-sm leading-relaxed">{item.desc}</p>
+              <p className="text-[#BFBDB8] text-sm leading-relaxed">{item.desc}</p>
             </motion.div>
           ))}
         </div>
@@ -589,18 +593,18 @@ const Results = () => {
                     viewport={{ once: true }}
                     transition={{ delay: i * 0.2 }}
                     whileHover={{ y: -10 }}
-                    className="bg-white/60 backdrop-blur-md p-8 rounded-xl relative group transition-all duration-500 hover:bg-white border border-slate-50 h-full flex flex-col shadow-[0_10px_40px_rgba(92,67,134,0.04)] hover:shadow-[0_15px_50px_rgba(92,67,134,0.1)]"
+                    className="bg-white/60 backdrop-blur-md p-8 rounded-xl relative group transition-all duration-500 hover:bg-white border border-[#EDEBE7] h-full flex flex-col shadow-[0_10px_40px_rgba(71,60,48,0.04)] hover:shadow-[0_15px_50px_rgba(71,60,48,0.1)]"
                   >
                     <Quote className="absolute top-6 right-6 text-brand-gold/10 w-16 h-16 group-hover:text-brand-gold/20 transition-colors" />
                     <div className="flex gap-1 mb-6">
                       {[...Array(5)].map((_, j) => <Star key={j} className="w-4 h-4 fill-brand-gold text-brand-gold" />)}
                     </div>
-                    <p className="text-slate-600 mb-8 italic leading-relaxed relative z-10 flex-grow">"{t.text}"</p>
+                    <p className="text-[#7B766B] mb-8 italic leading-relaxed relative z-10 flex-grow">"{t.text}"</p>
                     <div className="flex items-center gap-4 relative z-10 mt-auto">
                       <img src={t.image} alt={t.name} className="w-12 h-12 rounded-full border-2 border-white shadow-sm" />
                       <div>
                         <p className="font-bold text-brand-blue">{t.name}</p>
-                        <p className="text-[10px] text-slate-400 uppercase font-bold tracking-[0.15em]">{t.role}</p>
+                        <p className="text-[10px] text-[#BFBDB8] uppercase font-bold tracking-[0.15em]">{t.role}</p>
                         <p><span className=" text-brand-gold text-[10px] uppercase font-bold">{t.company}</span></p>
                       </div>
                     </div>
@@ -616,7 +620,7 @@ const Results = () => {
               onClick={() => setCurrentIndex(prev => Math.max(prev - 1, 0))}
               disabled={currentIndex === 0}
               aria-label="Anterior testimonio"
-              className="w-12 h-12 rounded-full border-2 border-slate-100 flex items-center justify-center text-brand-blue hover:bg-brand-sage hover:border-brand-sage transition-all disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-slate-100 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
+              className="w-12 h-12 rounded-full border-2 border-[#EDEBE7] flex items-center justify-center text-brand-blue hover:bg-brand-sage hover:border-brand-sage transition-all disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#EDEBE7] disabled:cursor-not-allowed shadow-sm hover:shadow-md"
             >
               <ChevronLeft size={24} />
             </button>
@@ -626,7 +630,7 @@ const Results = () => {
                 <button
                   key={i}
                   onClick={() => setCurrentIndex(i)}
-                  className={`h-2.5 rounded-full transition-all duration-300 ${currentIndex === i ? "bg-brand-gold w-8" : "bg-slate-200 hover:bg-slate-300 w-2.5"
+                  className={`h-2.5 rounded-full transition-all duration-300 ${currentIndex === i ? "bg-brand-gold w-8" : "bg-[#BFBDB8]/30 hover:bg-[#BFBDB8]/50 w-2.5"
                     }`}
                   aria-label={`Ir a la página ${i + 1}`}
                 />
@@ -637,7 +641,7 @@ const Results = () => {
               onClick={() => setCurrentIndex(prev => Math.min(prev + 1, Math.max(0, testimonials.length - itemsPerView)))}
               disabled={currentIndex === Math.max(0, testimonials.length - itemsPerView)}
               aria-label="Siguiente testimonio"
-              className="w-12 h-12 rounded-full border-2 border-slate-100 flex items-center justify-center text-brand-blue hover:bg-brand-sage hover:border-brand-sage transition-all disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-slate-100 disabled:cursor-not-allowed shadow-sm hover:shadow-md"
+              className="w-12 h-12 rounded-full border-2 border-[#EDEBE7] flex items-center justify-center text-brand-blue hover:bg-brand-sage hover:border-brand-sage transition-all disabled:opacity-30 disabled:hover:bg-transparent disabled:hover:border-[#EDEBE7] disabled:cursor-not-allowed shadow-sm hover:shadow-md"
             >
               <ChevronRight size={24} />
             </button>
@@ -652,10 +656,10 @@ const Results = () => {
             viewport={{ once: true }}
             className="text-center"
           >
-            <p className="text-slate-400 text-[10px] font-bold uppercase tracking-[0.4em] mb-12">Empresas que confían en la transformación</p>
+            <p className="text-[#BFBDB8] text-[10px] font-bold uppercase tracking-[0.4em] mb-12">Empresas que confían en la transformación</p>
             <div className="flex flex-wrap justify-center items-center gap-12 md:gap-20 opacity-30 grayscale hover:opacity-60 transition-opacity duration-500">
               {['MAC COMESTICS', 'MAKEUP CLUSTER', 'ATTENZA DUTTY FREE'].map(logo => (
-                <span key={logo} className="text-xl md:text-2xl font-serif font-black tracking-tighter text-slate-900">{logo}</span>
+                <span key={logo} className="text-xl md:text-2xl font-serif font-black tracking-tighter text-[#473C30]">{logo}</span>
               ))}
             </div>
           </motion.div>
@@ -701,7 +705,7 @@ const Contact = () => {
               ))}
 
               <a href="mailto:deisymavares@gmail.com" className="flex items-center gap-5 group transition-all hover:translate-x-2">
-                <div className="w-12 h-12 bg-brand-gold border border-brand-gold/50 rounded-2xl flex items-center justify-center text-brand-blue shadow-[0_0_15px_rgba(216,168,62,0.3)] group-hover:shadow-[0_0_25px_rgba(216,168,62,0.5)] transition-shadow">
+                <div className="w-12 h-12 bg-brand-gold border border-brand-gold/50 rounded-2xl flex items-center justify-center text-brand-blue shadow-[0_0_15px_rgba(197,169,142,0.3)] group-hover:shadow-[0_0_25px_rgba(197,169,142,0.5)] transition-shadow">
                   <Mail size={22} />
                 </div>
                 <div>
@@ -720,7 +724,7 @@ const Contact = () => {
           >
             <div className="relative w-full max-w-md mx-auto aspect-[3/4] overflow-hidden rounded-[2rem] border-4 border-white/10 shadow-2xl premium-shadow">
               <img
-                src="/contactame.jpeg"
+                src="/contactame.png"
                 alt="Deisy Mavares - Contáctame"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 hover:scale-105"
               />
@@ -743,7 +747,7 @@ const WhatsAppButton = () => (
     transition={{ delay: 3, type: "spring" }}
     whileHover={{ scale: 1.1 }}
     whileTap={{ scale: 0.9 }}
-    className="fixed bottom-8 right-8 z-[60] bg-brand-blue text-brand-gold p-4 rounded-full shadow-[0_10px_30px_rgba(92,67,134,0.3)] flex items-center justify-center group border border-white/10"
+    className="fixed bottom-8 right-8 z-[60] bg-brand-blue text-brand-gold p-4 rounded-full shadow-[0_10px_30px_rgba(71,60,48,0.3)] flex items-center justify-center group border border-white/10"
   >
     <div className="absolute right-full mr-4 bg-white text-brand-blue px-4 py-2 rounded-lg text-xs font-bold shadow-xl opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap pointer-events-none">
       ¿Hablamos por WhatsApp?
@@ -789,7 +793,7 @@ export default function App() {
             <div className="absolute top-0 left-0 w-full h-8 bg-gradient-to-b from-brand-blue/[0.02] to-transparent pointer-events-none"></div>
 
             <div className="max-w-7xl mx-auto px-6 relative z-10">
-              <img src="/Logo_2.png" alt="Deisy Mavares Logo" className="h-30 w-auto object-contain mx-auto mb-10 drop-shadow-sm" />
+              <img src="/Logo_1.png" alt="Deisy Mavares Logo" className="h-30 w-auto object-contain mx-auto mb-10 drop-shadow-sm" />
               <div className="flex justify-center gap-6 mb-12">
                 {[
                   { id: 'Linkedin', icon: Linkedin, url: 'https://www.linkedin.com/in/deisy-mavares-0352a9404' },
@@ -799,7 +803,7 @@ export default function App() {
                   <a
                     key={social.id}
                     href={social.url}
-                    className="w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm shadow-[0_5px_15px_rgba(92,67,134,0.08)] flex items-center justify-center text-brand-blue hover:text-brand-gold hover:-translate-y-1 transition-all duration-300"
+                    className="w-12 h-12 rounded-full bg-white/80 backdrop-blur-sm shadow-[0_5px_15px_rgba(71,60,48,0.08)] flex items-center justify-center text-brand-blue hover:text-brand-gold hover:-translate-y-1 transition-all duration-300"
                     aria-label={social.id}
                   >
                     <social.icon size={20} strokeWidth={1.5} />

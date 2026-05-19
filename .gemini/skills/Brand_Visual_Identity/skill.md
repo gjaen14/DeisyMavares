@@ -1,43 +1,114 @@
-Skill: Brand Visual Identity (Premium & Spiritual)
+Skill: Brand Visual Identity (Premium Wellness)
 ---
 name: brand-visual-identity
-description: Guía de identidad visual, paleta cromática y estilo UI para la marca de liderazgo consciente. Úsalo para definir variables CSS, estilos de componentes y jerarquía visual premium.
+description: Identidad visual derivada del moodboard oficial. Define la paleta cromática, tipografía y estilo UI para sitios web premium de bienestar, liderazgo y marca personal de alto valor.
 ---
 
-# Brand Visual Identity & Style Guide
+# Brand Visual Identity & Style Guide  
+Basado en la estética cálida, editorial y minimalista del moodboard, esta identidad combina bienestar premium + sofisticación profesional.
 
-Este skill define la estética **"Premium Espiritual + Sofisticación Corporativa"**, diseñada para transmitir autoridad suave y exclusividad profesional [6].
+---
 
-## Paleta Cromática Premium
-El agente debe utilizar estos códigos hexadecimales exactos para mantener la integridad de la marca [7]:
+# 🎨 Paleta Cromática (Extraída del Moodboard)
 
-- **Colores Principales:**
-  - **Púrpura Profundo (#5C4386):** Elegancia y sabiduría profesional.
-  - **Lavanda Suave (#D9D0EB):** Bienestar y cercanía emocional.
-  - **Dorado Cálido (#D8A83E):** Exclusividad y propósito elevado.
-- **Colores Secundarios:**
-  - **Blanco Puro (#FFFFFF):** Claridad y respiración visual.
-  - **Gris Lavanda (#F4F1FA):** Fondos sutiles.
+El agente debe usar estos colores EXACTOS:
 
-## Tipografía y Estilo UI
-Para reflejar el posicionamiento de la marca, se deben seguir estas reglas [8]:
+## **Colores Base**
+- **#EDEBE7** — Arena pálido. Fondo principal, calma y pureza.
+- **#BFBDB8** — Neutro cálido. Fondos secundarios y bloques suaves.
+- **#7B766B** — Gris cálido profundo. Texto primario elegante.
+- **#473C30** — Café oscuro premium. Titulares, acentos de prestigio.
 
-1. **Titulares (H1, H2):** Serif moderna y delgada (ej. *Cormorant Garamond* o *Playfair Display*).
-2. **Cuerpo y Botones:** Sans-serif ligera y redondeada (ej. *Inter* o *Montserrat*).
-3. **Componentes:** 
-   - Uso de **Glassmorphism** sutil con blur suave.
-   - Bordes redondeados y sombras difuminadas transparentes.
-   - **Radiant Glow:** Implementar fondos lavanda con un ligero resplandor radial [6, 8].
+## **Colores de Extensión**
+Para variaciones premium sin saturar:
+- **#FFFFFF** — Blanco. Respira lujo silencioso.
+- **#D0C7BE** — “Soft Gold Matte”. Acentos premium no metálicos.
+- **#C5A98E** — Nude elegante. Ideal para botones y CTAs.
+- **#1A1816** — Negro cálido profundo. Modo oscuro editorial opcional.
 
-## Patrones de Diseño (Correcto vs. Incorrecto)
-Siguiendo las mejores prácticas de Vercel para optimizar la carga cognitiva [1]:
+**Estilo emocional:** lujo suave, equilibrio, bienestar consciente.
 
-- **❌ Incorrecto:** Usar el Dorado Cálido como fondo de secciones grandes (satura visualmente).
-- **✅ Correcto:** Usar Dorado Cálido solo en acentos minimalistas, bordes finos o bullets [6].
-- **❌ Incorrecto:** Botones con bordes rectos y colores sólidos agresivos.
-- **✅ Correcto:** Botones con bordes muy suaves, fondo lavanda pálido y efecto hover dorado suave [8].
+---
 
-## Aplicación en el Hero Section
-Al construir el Hero cinematográfico solicitado:
-- Utilizar el **Púrpura Profundo** para el texto sobre el fondo lavanda radial para maximizar el contraste y la legibilidad.
-- Las fotos deben llevar un **borde dorado ultra fino** y una sombra púrpura suave para dar profundidad [8].
+# 🖋 Tipografía Oficial
+
+## **Titulares (H1, H2)**
+**Ethic New**  
+- Estética editorial, elegante y con presencia.  
+- Tamaños recomendados:  
+  - H1: 54–72px  
+  - H2: 36–44px  
+- Tracking: +2% para dar aire y sensación premium.
+
+## **Subtítulos de apoyo**
+**Motterdam**  
+- Para frases emocionales, insight o storytelling.  
+- Usar con moderación para no saturar.
+
+## **Cuerpo de texto (párrafos, descripciones)**
+**Poppins**  
+- Tamaño: 16–20px  
+- Line-height: 150–170%  
+- Color: #7B766B (alto confort visual)
+
+## **Botones / UI**
+**Poppins SemiBold – 16–18px**
+
+---
+
+# 🧱 Estilo UI Premium
+
+## **Componentes**
+- Bordes suaves (8–16px).
+- Sombra difusa mínima (blur 30–40).
+- Uso controlado de nude (#C5A98E) para botones.
+- Soft-gold (#D0C7BE) para líneas finas o bullets premium.
+- Espacios grandes: el aire es parte del branding.
+
+## **Botones**
+- **Primario:**  
+  - Fondo: #473C30  
+  - Texto: #FFFFFF  
+  - Hover: #5A4F42 o nude suave
+
+- **Secundario:**  
+  - Borde: 1px #7B766B  
+  - Texto: #473C30  
+  - Fondo: transparente
+
+## **Tarjetas / Cards**
+- Fondo #EDEBE7 o #BFBDB8  
+- Bordes redondeados suaves  
+- Sombra leve para elegancia editorial
+
+## **Inputs**
+- Bordes: #D0C7BE  
+- Placeholder: #BFBDB8
+
+---
+
+# 🧭 Reglas de Uso Correcto / Incorrecto
+
+### ✔ Correcto
+- Mucho espacio en blanco  
+- Titulares Ethic New + Poppins en cuerpo  
+- Acentos nude o soft gold sutiles  
+- Fotos cálidas, luz suave, mood editorial wellness  
+- Composición minimalista con ritmo visual amplio  
+
+### ❌ Incorrecto
+- Usar dorados metálicos brillantes  
+- Sobrecargar con Motterdam  
+- Saturar fondos con colores oscuros  
+- Usar sombras fuertes o neón  
+- Mezclar serif adicionales no definidas en el skill  
+
+---
+
+# 🎬 Hero Section (Guía de Implementación)
+
+- Fondo: #EDEBE7  
+- H1 Ethic New grande, editorial  
+- Párrafos en Poppins gris cálido #7B766B  
+- CTA nude (#C5A98E) o café oscuro (#473C30)  
+- Foto lifestyle limpia, tonos mate, luz suave  

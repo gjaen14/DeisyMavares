@@ -490,7 +490,7 @@ const Differentiator = () => {
           >
             <h2 className="text-brand-gold text-sm font-bold uppercase tracking-[0.2em] mb-6">El Diferencial</h2>
             <p className="text-3xl md:text-5xl font-serif italic leading-tight mb-8">
-              "No es yoga en la oficina. Es <span className="text-brand-gold">transformación real</span> del liderazgo desde adentro."
+              "El verdadero liderazgo nace de la coherencia entre el<span className="text-brand-gold"> propósito humano</span>y la <span className="text-brand-gold">estrategia de negocio.</span>
             </p>
           </motion.div>
         </div>
@@ -516,7 +516,7 @@ const Differentiator = () => {
           ))}
         </div>
       </div>
-    </section>
+    </section >
   );
 };
 

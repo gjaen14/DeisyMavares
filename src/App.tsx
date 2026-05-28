@@ -558,8 +558,8 @@ const Results = () => {
       image: "/woman_generic.png"
     },
     {
-      name: "Carlo Quintavalle",
-      company: "Attenza Duty Free Panama",
+      name: "Sr. Carlo Quintavalle",
+      company: "Motta Internacional",
       text: "A lo largo de este tiempo Deisy ha sido parte de mi equipo de ventas, y puedo decir con total convicción que su aporte ha sido consistente, valioso y en constante evolución. Deisy se caracteriza por su alto nivel de compromiso, su ética de trabajo y una genuina disposición por aprender, retarse y crecer profesionalmente. Puedo destacar su capacidad para asumir nuevos desafíos con una mentalidad abierta, su interés por desarrollarse más allá de su rol actual y su habilidad para generar conversaciones de valor, acompañar procesos y aportar desde la escucha y la empatía. Su crecimiento no solo es visible en resultados, sino también en la forma en que se relaciona.",
       image: "/man_generic.png"
     }

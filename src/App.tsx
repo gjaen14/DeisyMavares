@@ -558,8 +558,8 @@ const Results = () => {
       image: "/woman_generic.png"
     },
     {
-      name: "Carlo Quintavalle",
-      company: "Attenza Duty Free Panama",
+      name: "Sr. Carlo Quintavalle",
+      company: "Motta Internacional",
       text: "A lo largo de este tiempo Deisy ha sido parte de mi equipo de ventas, y puedo decir con total convicción que su aporte ha sido consistente, valioso y en constante evolución. Deisy se caracteriza por su alto nivel de compromiso, su ética de trabajo y una genuina disposición por aprender, retarse y crecer profesionalmente. Puedo destacar su capacidad para asumir nuevos desafíos con una mentalidad abierta, su interés por desarrollarse más allá de su rol actual y su habilidad para generar conversaciones de valor, acompañar procesos y aportar desde la escucha y la empatía. Su crecimiento no solo es visible en resultados, sino también en la forma en que se relaciona.",
       image: "/man_generic.png"
     }
@@ -704,13 +704,13 @@ const Contact = () => {
                 </div>
               ))}
 
-              <a href="mailto:deisymavares@gmail.com" className="flex items-center gap-5 group transition-all hover:translate-x-2">
+              <a href="mailto:info@deisymavares.com" className="flex items-center gap-5 group transition-all hover:translate-x-2">
                 <div className="w-12 h-12 bg-brand-gold border border-brand-gold/50 rounded-2xl flex items-center justify-center text-brand-blue shadow-[0_0_15px_rgba(197,169,142,0.3)] group-hover:shadow-[0_0_25px_rgba(197,169,142,0.5)] transition-shadow">
                   <Mail size={22} />
                 </div>
                 <div>
                   <p className="font-bold text-white text-sm">Contáctame por Correo</p>
-                  <p className="text-xs text-brand-gold">deisymavares@gmail.com</p>
+                  <p className="text-xs text-brand-gold">info@deisymavares.com</p>
                 </div>
               </a>
             </div>

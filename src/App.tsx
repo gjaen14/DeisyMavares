@@ -704,13 +704,13 @@ const Contact = () => {
                 </div>
               ))}
 
-              <a href="mailto:deisymavares@gmail.com" className="flex items-center gap-5 group transition-all hover:translate-x-2">
+              <a href="mailto:info@deisymavares.com" className="flex items-center gap-5 group transition-all hover:translate-x-2">
                 <div className="w-12 h-12 bg-brand-gold border border-brand-gold/50 rounded-2xl flex items-center justify-center text-brand-blue shadow-[0_0_15px_rgba(197,169,142,0.3)] group-hover:shadow-[0_0_25px_rgba(197,169,142,0.5)] transition-shadow">
                   <Mail size={22} />
                 </div>
                 <div>
                   <p className="font-bold text-white text-sm">Contáctame por Correo</p>
-                  <p className="text-xs text-brand-gold">deisymavares@gmail.com</p>
+                  <p className="text-xs text-brand-gold">info@deisymavares.com</p>
                 </div>
               </a>
             </div>
